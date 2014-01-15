@@ -34,14 +34,16 @@
   lp = log --pretty="format:'%h %ad | %an - %s%d'" --date=short
   lgs = log --stat
   ls = ls-files
-  pr = pull --rebase 
-  rem = remote --verbose
+  pr = pull --rebase
+  remv = remote --verbose
+  rem = remote
 
 [user]
   name = Philip Corliss
-  email = pcorliss@groupon.com
+  email = pcorliss@50projects.com
+
 [http]
-  sslVerify = false
+  ;sslVerify = false
 
 [mergetool "diffmerge"]
   cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
