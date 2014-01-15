@@ -1,0 +1,7 @@
+alias ls='ls -GFh'
+alias bi='bundle install'
+alias be='bundle exec'
+
+alias json='python -mjson.tool'
+
+export PATH="$HOME/bin:./node_modules/.bin:/usr/local/share/npm/bin:$PATH"
