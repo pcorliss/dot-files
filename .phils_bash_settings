@@ -7,6 +7,17 @@ alias json='python -mjson.tool'
 export GOROOT=$HOME/go
 export GOPATH=$GOROOT/bin
 
-export PATH="$HOME/bin:./node_modules/.bin:/usr/local/share/npm/bin:$GOPATH:$PATH"
+export PATH="/usr/local/bin/:$HOME/bin:./node_modules/.bin:/usr/local/share/npm/bin:$GOPATH:$PATH"
 
 export PS1="\W \\$ "
+
+export ARCHFLAGS="-arch x86_64"
+
+# pip should only run if there is a virtualenv currently activated
+export PIP_REQUIRE_VIRTUALENV=true
+# cache pip-installed packages to avoid re-downloading
+export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
+
+syspip(){
+   PIP_REQUIRE_VIRTUALENV="" pip "$@"
+}
