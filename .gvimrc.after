@@ -16,3 +16,5 @@ set wildmode=longest,list,full
 set wildmenu
 
 set spell
+
+map <leader>f :ClearCtrlPCache<cr>

@@ -37,6 +37,7 @@
   pr = pull --rebase
   remv = remote --verbose
   rem = remote
+  diffc = diff --cached
 
 [user]
   name = Philip Corliss
