@@ -18,3 +18,5 @@ set wildmenu
 set spell
 
 map <leader>f :ClearCtrlPCache<cr>
+
+set wildignore+=*.o,*.obj,.git,node_modules
