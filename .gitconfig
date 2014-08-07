@@ -24,7 +24,8 @@
 
 [alias]
   st = status
-  ci = commit
+  stb = status -sb
+  ci = commit -v
   br = branch
   co = checkout
   df = diff
@@ -38,6 +39,9 @@
   remv = remote --verbose
   rem = remote
   diffc = diff --cached
+  amend = commit --amend
+  shas = log --pretty=format:"%H"
+  sha = log --pretty=format:"%H" -1
 
 [user]
   name = Philip Corliss
