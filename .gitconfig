@@ -54,4 +54,6 @@
   cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
   trustExitCode = false
 [push]
-	default = simple
+  default = simple
+[http]
+  ;proxy = http://localhost:8888
