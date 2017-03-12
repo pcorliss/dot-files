@@ -42,6 +42,7 @@
   amend = commit --amend
   shas = log --pretty=format:"%H"
   sha = log --pretty=format:"%H" -1
+  staged = diff --cached
 
 [user]
   name = Philip Corliss
