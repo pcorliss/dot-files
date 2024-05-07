@@ -58,3 +58,16 @@
   default = simple
 [http]
   ;proxy = http://localhost:8888
+
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[log]
+	date = iso
+[merge]
+	conflictstyle = zdiff3
+
