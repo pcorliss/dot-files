@@ -1,0 +1,8 @@
+alias ls='ls -GFh'
+alias bi='bundle install'
+alias be='bundle exec'
+
+alias json='python -mjson.tool'
+alias flushdns='dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
+
+alias git_debug='export GIT_TRACE_PACKET=1 GIT_CURL_VERBOSE=1 GIT_TRANSPORT_HELPER_DEBUG=1 GIT_DEBUG_SEND_PACK=1 GIT_TRACE=1'
